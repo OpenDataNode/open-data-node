@@ -2,7 +2,9 @@
 
 ## Intro
 
-TODO
+For initial introduction of what Open Data Node is (or is supposed to be)
+please read [a post on COMSODE
+blog](http://www.comsode.eu/index.php/2014/06/open-data-node-what-it-is-what-it-does-what-is-next/).
 
 ## Documentation
 
