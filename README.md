@@ -38,4 +38,10 @@ with developoment, documentation will be maintaned to describe ODN "as is".
 
 ## License
 
-TODO
+ODN will consists from several modules, each with its own license. But
+overall, ODN will be [free and
+open-source](https://en.wikipedia.org/wiki/FOSS).
+
+For more information, please see:
+
+https://utopia.sk/wiki/display/ODN/Architecture+and+Design+-+Licensing
