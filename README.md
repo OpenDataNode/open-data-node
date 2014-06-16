@@ -25,6 +25,17 @@ is good.  If that is not feasible for some reason, the next best thing is
 wiki on GitHub.  Even if that is not feasible, you can use space in
 OpenData.sk's Confluence Wiki.
 
+### Architecture and Design
+
+Planned architecture of Open Data Node is maintaned in Public Confluence
+Wiki at:
+
+https://utopia.sk/wiki/display/ODN/Architecture+and+Design
+
+
+Currently it described mainly stuff mainly "as planned". LAter on, in line
+with developoment, documentation will be maintaned to describe ODN "as is".
+
 ## License
 
 TODO
