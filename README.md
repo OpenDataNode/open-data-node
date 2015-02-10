@@ -36,6 +36,34 @@ https://utopia.sk/wiki/display/ODN/Architecture+and+Design
 Currently it described mainly stuff mainly "as planned". LAter on, in line
 with developoment, documentation will be maintaned to describe ODN "as is".
 
+### Installation
+
+Supported distribution is Debian Wheezy. To install packages from COMSODE Debian repository, please follow these steps:
+
+1. Add ODN packages repository into apt-sources-list:
+
+```
+echo "deb http://packages.comsode.eu/debian/ wheezy main" > /etc/apt/sources.list.d/odn.list
+```
+
+2. Add ODN public key:
+
+```
+wget -O - http://packages.comsode.eu/key/odn.gpg.key | apt-key add -
+```
+
+3. Update apt sources:
+
+```
+aptitude update
+```
+
+4. install ODN box:
+
+```
+aptitude install odn-simple
+```
+
 ## License
 
 ODN will consists from several modules, each with its own license. But
