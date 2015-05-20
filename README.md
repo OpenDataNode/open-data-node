@@ -1,4 +1,4 @@
-# Open Data Node
+# Open Data Node [![Stories in Ready](https://badge.waffle.io/opendatanode/open-data-node.svg?label=status:%20planed&title=Planed)](http://waffle.io/opendatanode/open-data-node) [![Stories in Ready](https://badge.waffle.io/opendatanode/open-data-node.svg?label=status:%20in%20progress&title=In%20Progress)](http://waffle.io/opendatanode/open-data-node) [![Stories in Ready](https://badge.waffle.io/opendatanode/open-data-node.svg?label=status:%20ready%20for%20test&title=Ready%20for%20test)](http://waffle.io/opendatanode/open-data-node) 
 
 ## Intro
 
