@@ -65,6 +65,14 @@ aptitude update
 aptitude install odn-simple
 ```
 
+### Upgrade
+
+If you already installed ODN using steps described in previous section, simply run:
+
+```
+aptitude upgrade
+```
+
 ## License
 
 ODN will consists from several modules, each with its own license. But
