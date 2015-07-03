@@ -70,6 +70,7 @@ aptitude install odn-simple
 If you already installed ODN using steps described in previous section, simply run:
 
 ```
+aptitude update
 aptitude upgrade
 ```
 
