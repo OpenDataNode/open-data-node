@@ -59,7 +59,7 @@ aptitude install odn-simple -V
 
 ## Upgrade from a previous version
 
-== Upgrade from ODN prior to 1.0.0 is not correctly supported due to change of CKAN version and also infrastructure changes.==
+*__Note__: :exclamation: Upgrade from ODN prior to 1.0.0 is not correctly supported due to change of CKAN version and also infrastructure changes.*
 
 If you already installed ODN using steps described in previous section, follow these steps
 
