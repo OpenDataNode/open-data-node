@@ -10,13 +10,14 @@ Supported distribution is Debian Wheezy (7.x).
 * if [FQDN](http://en.wikipedia.org/wiki/Fully_qualified_domain_name) is defined, the host has to be visible from external network, (e.g. if FQDN is odn.example.com then the host must be visible both through http and https protocols via http://odn.example.com and https://odn.example.com)
 * if [FQDN](http://en.wikipedia.org/wiki/Fully_qualified_domain_name) is not defined, the host has to be visible from external network, (e.g. if hostname is example then the host must be visible both through http and https via http://example and https://example)
 
-Steps to configure FQDN
-1. to get ip address of host
+#### Steps to configure FQDN
+
+1. to get ip address of host <br>
 ```IP_ADDRESS=`/sbin/ifconfig eth0 | grep 'inet addr:' | cut -d: -f2 | awk '{ print $1}'` ```
-1. to set FQDN - where host is accessible via  my-computer.my-domain.ext
-`echo "$IP_ADDRESS  my-computer.my-domain.ext my-computer " >> /etc/hosts`
-1. to verify if host is set properly
-`hostname -A`
+2. to set FQDN - where host is accessible via  my-computer.my-domain.ext <br>
+```echo "$IP_ADDRESS  my-computer.my-domain.ext my-computer " >> /etc/hosts```
+3. to verify if host is set properly <br>
+```hostname -A```
 
 ### Configuration of java for tomcat
 tomcat 7 uses by default java 6 so it is necessary to change default java for tomcat. Edit /etc/default/tomcat7, update environment variable JAVA_HOME.
@@ -26,22 +27,22 @@ tomcat 7 uses by default java 6 so it is necessary to change default java for to
 
 To install packages from COMSODE Debian repository, please follow these steps:
  
-1. Add ODN packages repository into apt-sources-list:
+1. Add ODN packages repository into apt-sources-list: <br>
 `echo "deb http://packages.comsode.eu/debian/ wheezy main" > /etc/apt/sources.list.d/odn.list`
 
-2. Add ODN public key:
+2. Add ODN public key: <br>
 `wget -O - http://packages.comsode.eu/key/odn.gpg.key | apt-key add -`
 
-3. Update apt sources:
+3. Update apt sources: <br>
 `aptitude update`
 
-4. install ODN box (odn-simple package):
-`aptitude install odn-simple`
+4. install ODN box (odn-simple package): <br>
+`aptitude install odn-simple` <br>
 The following user input is required during the installation process:
  * ldap password: whatever password can be used
  * Virtuoso password: dba
 
-*__Note 1__: If you want to reduce packages that are not necessary, then call*
+*__Note 1__: If you want to reduce packages that are not necessary, then call* <br>
 ```aptitude install --without-recommends odn-simple```
 
 *__Note 2__: In case of fresh clean Debian Wheezy installation the steps described above should work, no other commands are required. However in some cases some python dependency problems has been detected (when the Debian environment was created as a result of virtualization).
