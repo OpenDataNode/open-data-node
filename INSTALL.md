@@ -3,12 +3,9 @@ Install and Upgrade Manual
 
 Supported distribution is Debian Wheezy (7.x).
 
+## Configuration of system
 
-## Installation on debian
-
-### Configuration of system
-
-#### Configure FQDN on Debian
+### Configure FQDN on Debian
 
 * if [FQDN](http://en.wikipedia.org/wiki/Fully_qualified_domain_name) is defined, the host has to be visible from external network, (e.g. if FQDN is odn.example.com then the host must be visible both through http and https protocols via http://odn.example.com and https://odn.example.com)
 * if [FQDN](http://en.wikipedia.org/wiki/Fully_qualified_domain_name) is not defined, the host has to be visible from external network, (e.g. if hostname is example then the host must be visible both through http and https via http://example and https://example)
@@ -21,11 +18,11 @@ Steps to configure FQDN
 1. to verify if host is set properly
 `hostname -A`
 
-#### Configuration of java for tomcat
+### Configuration of java for tomcat
 tomcat 7 uses by default java 6 so it is necessary to change default java for tomcat. Edit /etc/default/tomcat7, update environment variable JAVA_HOME.
 `JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64`
 
-### Installation on clean system
+## Installation on clean system
 
 To install packages from COMSODE Debian repository, please follow these steps:
  
@@ -60,7 +57,7 @@ apt-get install python-setuptools  -V
 aptitude install odn-simple -V
 ```
 
-### Upgrade from a previous version
+## Upgrade from a previous version
 
 == Upgrade from ODN prior to 1.0.0 is not correctly supported due to change of CKAN version and also infrastructure changes.==
 
@@ -73,20 +70,3 @@ aptitude update
 aptitude upgrade
 ```
 User is required to confirm replacement of configuration files from previous installation, it should be confirmed by pressing **'Y'** each time user input is required.
-
-### Troubleshooting
-
-#### Python dependency update
-
-== in case of ODN upgrade no Python dependency update is needed==
-
-In case of fresh clean Debian Wheezy installation the steps described above should work, no other commands are required. However in some cases some python dependency problems has been detected (when the Debian environment was created as a result of virtualization). 
-In such cases the following steps are required to resolve the dependency problems:
-apt-get purge python\*
-apt-get install python2.7-minimal  -V
-apt-get install libapache2-mod-wsgi -V
-apt-get install lsb-release  -V
-apt-get install python-pkg-resources  -V
-apt-get install python-pip  -V
-apt-get install python-setuptools  -V
-aptitude install odn-simple -V
