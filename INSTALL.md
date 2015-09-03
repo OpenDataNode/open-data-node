@@ -27,22 +27,22 @@ tomcat 7 uses by default java 6 so it is necessary to change default java for to
 
 To install packages from COMSODE Debian repository, please follow these steps:
  
-1. Add ODN packages repository into apt-sources-list:
+1. Add ODN packages repository into apt-sources-list: <br>
 `echo "deb http://packages.comsode.eu/debian/ wheezy main" > /etc/apt/sources.list.d/odn.list`
 
-2. Add ODN public key:
+2. Add ODN public key: <br>
 `wget -O - http://packages.comsode.eu/key/odn.gpg.key | apt-key add -`
 
-3. Update apt sources:
+3. Update apt sources: <br>
 `aptitude update`
 
-4. install ODN box (odn-simple package):
-`aptitude install odn-simple`
+4. install ODN box (odn-simple package): <br>
+`aptitude install odn-simple` <br>
 The following user input is required during the installation process:
  * ldap password: whatever password can be used
  * Virtuoso password: dba
 
-*__Note 1__: If you want to reduce packages that are not necessary, then call*
+*__Note 1__: If you want to reduce packages that are not necessary, then call* <br>
 ```aptitude install --without-recommends odn-simple```
 
 *__Note 2__: In case of fresh clean Debian Wheezy installation the steps described above should work, no other commands are required. However in some cases some python dependency problems has been detected (when the Debian environment was created as a result of virtualization).
