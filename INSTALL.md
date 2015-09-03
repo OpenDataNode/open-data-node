@@ -10,19 +10,14 @@ Supported distribution is Debian Wheezy (7.x).
 * if [FQDN](http://en.wikipedia.org/wiki/Fully_qualified_domain_name) is defined, the host has to be visible from external network, (e.g. if FQDN is odn.example.com then the host must be visible both through http and https protocols via http://odn.example.com and https://odn.example.com)
 * if [FQDN](http://en.wikipedia.org/wiki/Fully_qualified_domain_name) is not defined, the host has to be visible from external network, (e.g. if hostname is example then the host must be visible both through http and https via http://example and https://example)
 
-Steps to configure FQDN
-1. to get ip address of host
-```
-IP_ADDRESS=`/sbin/ifconfig eth0 | grep 'inet addr:' | cut -d: -f2 | awk '{ print $1}'`
-```
-1. to set FQDN - where host is accessible via  my-computer.my-domain.ext
-```
-echo "$IP_ADDRESS  my-computer.my-domain.ext my-computer " >> /etc/hosts
-```
-1. to verify if host is set properly
-```
-hostname -A
-```
+#### Steps to configure FQDN
+
+1. to get ip address of host <br>
+```IP_ADDRESS=`/sbin/ifconfig eth0 | grep 'inet addr:' | cut -d: -f2 | awk '{ print $1}'` ```
+2. to set FQDN - where host is accessible via  my-computer.my-domain.ext <br>
+```echo "$IP_ADDRESS  my-computer.my-domain.ext my-computer " >> /etc/hosts```
+3. to verify if host is set properly <br>
+```hostname -A```
 
 ### Configuration of java for tomcat
 tomcat 7 uses by default java 6 so it is necessary to change default java for tomcat. Edit /etc/default/tomcat7, update environment variable JAVA_HOME.
