@@ -12,11 +12,17 @@ Supported distribution is Debian Wheezy (7.x).
 
 Steps to configure FQDN
 1. to get ip address of host
-```IP_ADDRESS=`/sbin/ifconfig eth0 | grep 'inet addr:' | cut -d: -f2 | awk '{ print $1}'` ```
+```
+IP_ADDRESS=`/sbin/ifconfig eth0 | grep 'inet addr:' | cut -d: -f2 | awk '{ print $1}'`
+```
 1. to set FQDN - where host is accessible via  my-computer.my-domain.ext
-`echo "$IP_ADDRESS  my-computer.my-domain.ext my-computer " >> /etc/hosts`
+```
+echo "$IP_ADDRESS  my-computer.my-domain.ext my-computer " >> /etc/hosts
+```
 1. to verify if host is set properly
-`hostname -A`
+```
+hostname -A
+```
 
 ### Configuration of java for tomcat
 tomcat 7 uses by default java 6 so it is necessary to change default java for tomcat. Edit /etc/default/tomcat7, update environment variable JAVA_HOME.
