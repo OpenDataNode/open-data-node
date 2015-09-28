@@ -3,7 +3,7 @@
 ## Intro
 
 [Open Data Node](http://opendatanode.org/) (ODN in short) is open source platform
-supporting entire process of publication, management and exchange of open data.
+supporting entire process of publication, management and exchange of Open Data.
 For more information, please visit:
 
 http://opendatanode.org/
