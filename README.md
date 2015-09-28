@@ -2,50 +2,51 @@
 
 ## Intro
 
+[Open Data Node](http://opendatanode.org/) (ODN in short) is open source platform
+supporting entire process of publication, management and exchange of Open Data.
+For more information, please visit:
+
+http://opendatanode.org/
+
 For initial introduction of what Open Data Node is (or is supposed to be)
 please read [a post on COMSODE
 blog](http://www.comsode.eu/index.php/2014/06/open-data-node-what-it-is-what-it-does-what-is-next/).
 
 ## Documentation
 
-As part of [COMSODE project](http://www.comsode.eu/), we're taking ideas from
+As part of [COMSODE project](http://www.comsode.eu/), we've taken ideas from
 [old Open Data Node](http://opendata.sk/liferay/open-data-node), existing
-[UnifiedViews](https://github.com/UnifiedViews/) and we will put together new
+[UnifiedViews](https://github.com/UnifiedViews/) and we are putting together new
 Open Data Node.
 
-Documentation will be located in following places (ordered based on
+Documentation is located in following places (ordered based on
 impotance and preference):
 
 1. home page: http://opendatanode.org/
 2. source code tree on GitHub: https://github.com/OpenDataNode/open-data-node
-3. wiki on GitHub: https://github.com/OpenDataNode/open-data-node/wiki
-4. Open Data Node in OpenData.sk Wiki: https://utopia.sk/wiki/display/ODN/
+3. Open Data Node in OpenData.sk Wiki: https://utopia.sk/wiki/display/ODN/
 
 To make sure code matches documentation, having it together with source code
-is good.  If that is not feasible for some reason, the next best thing is
-wiki on GitHub. And if that is not feasible, you can use ODN space in
-OpenData.sk's Confluence Wiki.
+is preferable.  If that is not feasible for some reason, the next best thing is
+ODN space in OpenData.sk's Confluence Wiki.
 
 ### Architecture and Design
 
-Planned architecture of Open Data Node is maintaned in Public Confluence
-Wiki at:
+Architecture of Open Data Node is maintained in public OpenData.sk
+Confluence Wiki at:
 
 https://utopia.sk/wiki/display/ODN/Architecture+and+Design
 
 
-Currently it described mainly stuff mainly "as planned". LAter on, in line
-with developoment, documentation will be maintaned to describe ODN "as is".
-
 ### Installation
 
-see [Install and Upgrade Manual](./INSTALL.md)
+For instalaltion and upgrade instructions, please take a look at
+[Install and Upgrade Manual](./INSTALL.md).
 
 ## License
 
-ODN will consists from several modules, each with its own license. But
-overall, ODN will be [free and
-open-source](https://en.wikipedia.org/wiki/FOSS).
+ODN consists of several modules, each with its own license. But overall,
+ODN is [free and open-source](https://en.wikipedia.org/wiki/FOSS).
 
 For more information, please see:
 
