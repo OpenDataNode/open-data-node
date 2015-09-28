@@ -1,9 +1,11 @@
 Install and Upgrade Manual
 ---
 
-Supported distribution is Debian Wheezy (7.x).
+[TOC]
 
 ## Configuration of system
+
+Supported distribution is Debian Wheezy (7.x).
 
 ### Configure FQDN on Debian
 
