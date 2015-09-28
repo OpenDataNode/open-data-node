@@ -1,7 +1,14 @@
 Install and Upgrade Manual
 ---
 
-[TOC]
+- [Configuration of system](#Configuration of system)
+	- [Configure FQDN on Debian](#Configure FQDN on Debian)
+	- [Configuration of java for tomcat](#Configuration of java for tomcat)
+- [Installation on clean system](#Installation on clean system)
+- [Upgrade from a previous version](#Upgrade from a previous version)
+- [Installation of optional components](#Installation of optional components)
+	- [UnifiedViews QualityAssesment Plugins](#UnifiedViews QualityAssesment Plugins)
+	- [LDVMI (Payola)](#LDVMI (Payola))
 
 ## Configuration of system
 
