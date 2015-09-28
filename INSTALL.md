@@ -1,14 +1,14 @@
 Install and Upgrade Manual
 ---
 
-- [Configuration of system](#Configuration of system)
-	- [Configure FQDN on Debian](#Configure FQDN on Debian)
-	- [Configuration of java for tomcat](#Configuration of java for tomcat)
-- [Installation on clean system](#Installation on clean system)
-- [Upgrade from a previous version](#Upgrade from a previous version)
-- [Installation of optional components](#Installation of optional components)
-	- [UnifiedViews QualityAssesment Plugins](#UnifiedViews QualityAssesment Plugins)
-	- [LDVMI (Payola)](#LDVMI (Payola))
+- [Configuration of system](#configuration-of-system)
+	- [Configure FQDN on Debian](#configure-fqdn-on-debian)
+	- [Configuration of java for tomcat](#configuration-of-java-for-tomcat)
+- [Installation on clean system](#installation-on-clean-system)
+- [Upgrade from a previous version](#upgrade-from-a-previous-version)
+- [Installation of optional components](#installation-of-optional-components)
+	- [UnifiedViews QualityAssesment Plugins](#unifiedviews-qualityassesment-plugins)
+	- [LDVMI (Payola)](#ldvmi-payola)
 
 ## Configuration of system
 
