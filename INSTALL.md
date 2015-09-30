@@ -5,6 +5,7 @@ Install and Upgrade Manual
 	- [Configure FQDN on Debian](#configure-fqdn-on-debian)
 	- [Configuration of java for tomcat](#configuration-of-java-for-tomcat)
 - [Installation on clean system](#installation-on-clean-system)
+	- [Post-installation steps](#post-installation-steps)
 - [Upgrade from a previous version](#upgrade-from-a-previous-version)
 - [Installation of optional components](#installation-of-optional-components)
 	- [UnifiedViews QualityAssesment Plugins](#unifiedviews-qualityassesment-plugins)
@@ -66,6 +67,14 @@ apt-get install python-pip  -V
 apt-get install python-setuptools  -V
 aptitude install odn-simple -V
 ```
+
+### Post-installation steps
+
+immediately after the installation is done perform the following steps:
+* Open browser and use link `https://<hostname>/midpoint/login` where `<hostname>` is name of ODN server.
+* Username: `administrator`
+  Password: `5ecr3t`
+* in the Users menu of ODN/MP create new user(s) (you can define an organization for every new user)
 
 ## Upgrade from a previous version
 
