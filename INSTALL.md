@@ -107,18 +107,15 @@ It iwll install plugins into UnifiedViews.
 Installation of LDVMI is not fuly automated, manual steps are necessary. InternalCatalog and  PublicCatalog have to be manualy configured to allow integration of visualization data in catalogs, ckan plugin `webpage_view` have to be enabled. See  further details about [webpage_view ckan plugin](http://docs.ckan.org/en/ckan-2.3.1/maintaining/data-viewer.html#web-page-view).
 Detailed steps about configuration of ckan_plugins are in [CKAN documentation for ckan_plugins](http://docs.ckan.org/en/ckan-2.3.1/maintaining/configuration.html#ckan-plugins).
 
-1. To install LDVMI (Payola) component, simply run:
-```
-aptitude install ldvmi
-```
-2. To allow visualization in InternalCatalog, edit file `/etc/odn-simple/odn-ckan-ic/production.ini`, add `webpage_view` into `ckan_plugins` parameter
-```
-ckan.plugins = ... webpage_view ...
-```
-3. In InternalCatalog configuration file, enable webpage_view to be default view [see details in ckan doc](http://docs.ckan.org/en/ckan-2.3.1/maintaining/configuration.html#ckan-views-default-views)
-```
-ckan.views.default_views = ... webpage_view ...
-```
+1. To install LDVMI (Payola) component, simply run:<br>
+`aptitude install ldvmi`
+
+2. To allow visualization in InternalCatalog, edit file `/etc/odn-simple/odn-ckan-ic/production.ini`, add `webpage_view` into `ckan_plugins` parameter<br>
+`ckan.plugins = ... webpage_view ...`
+
+3. In InternalCatalog configuration file, enable webpage_view to be default view [see details in ckan doc](http://docs.ckan.org/en/ckan-2.3.1/maintaining/configuration.html#ckan-views-default-views)<br>
+`ckan.views.default_views = ... webpage_view ...`
+
 4. Repeat steps 2. and 3. for PublicCatalog in file `/etc/odn-simple/odn-ckan-pc/production.ini`
 5. Restart InternalCatalog and PublicCatalog:
 ```
