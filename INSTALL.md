@@ -115,3 +115,9 @@ ckan.views.default_views = ... webpage_view ...
 ```
 service apache2 restart
 ```
+
+## Support contacts
+
+In case you encounter problems with installation or upgrade of ODN, please use mailing list odn-support@googlegroups.com . This mailing list is public and is preferred way of getting support.
+
+If you need to post a message containng some more sensitive information, you can mail the ODN team using address support@opendatanode.org .
