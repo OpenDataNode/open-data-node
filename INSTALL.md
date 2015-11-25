@@ -9,6 +9,7 @@ Install and Upgrade Manual
 - [Installation of optional components](#installation-of-optional-components)
 	- [UnifiedViews QualityAssesment Plugins](#unifiedviews-qualityassesment-plugins)
 	- [LDVMI (Payola)](#ldvmi-payola)
+- [Support contacts](#support-contacts)
 
 ## Configuration of system
 
