@@ -84,15 +84,15 @@ User is required to confirm replacement of configuration files from previous ins
 
 ## Installation of optional components
 
-OpenDataNode supports also aditional components that could be installed and integrated with other core OpenDataNode components
+Open Data Node supports also aditional components that could be installed and integrated with other core Open Data Node components.
 
 ### UnifiedViews QualityAssesment Plugins
 
-To isntall QualityAssessment plugins, run following command
+To install QualityAssessment plugins, run following command
 ```
 aptitude install qa-uv-plugins
 ```
-It iwll install plugins into UnifiedViews.
+It will install plugins into UnifiedViews.
 
 ### LDVMI (Payola)
 
