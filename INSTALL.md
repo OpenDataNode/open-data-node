@@ -10,6 +10,7 @@ Install and Upgrade Manual
 - [Installation of optional components](#installation-of-optional-components)
 	- [UnifiedViews QualityAssesment Plugins](#unifiedviews-qualityassesment-plugins)
 	- [LDVMI (Payola)](#ldvmi-payola)
+- [Support contacts](#support-contacts)
 
 ## Configuration of system
 
@@ -17,17 +18,10 @@ Supported distribution is Debian Wheezy (7.x).
 
 ### Configure FQDN on Debian
 
-* if [FQDN](http://en.wikipedia.org/wiki/Fully_qualified_domain_name) is defined, the host has to be visible from external network, (e.g. if FQDN is odn.example.com then the host must be visible both through http and https protocols via http://odn.example.com and https://odn.example.com)
-* if [FQDN](http://en.wikipedia.org/wiki/Fully_qualified_domain_name) is not defined, the host has to be visible from external network, (e.g. if hostname is example then the host must be visible both through http and https via http://example and https://example)
-
-#### Steps to configure FQDN
-
-1. to get ip address of host <br>
-```IP_ADDRESS=`/sbin/ifconfig eth0 | grep 'inet addr:' | cut -d: -f2 | awk '{ print $1}'` ```
-2. to set FQDN - where host is accessible via  my-computer.my-domain.ext <br>
-```echo "$IP_ADDRESS  my-computer.my-domain.ext my-computer " >> /etc/hosts```
-3. to verify if host is set properly <br>
-```hostname -A```
+Before installing ODN, make sure that value returned by `hostname -f` is the one under which you would like your ODN instance to be accessible.
+Example: If `hostname -f` returns "odn.myorganization.org", your ODN instance will be available at http://odn.myorganization.org/ .
+Note: If the hostname is notproper FQDN, some users may experience problems while accessing your ODN instance.
+If you are not sure how to configure FQDN on Debian system, please follow instructions at https://wiki.debian.org/HowTo/ChangeHostname .
 
 ### Configuration of java for tomcat
 tomcat 7 uses by default java 6 so it is necessary to change default java for tomcat. Edit /etc/default/tomcat7, update environment variable JAVA_HOME.
@@ -121,3 +115,9 @@ Detailed steps about configuration of ckan_plugins are in [CKAN documentation fo
 ```
 service apache2 restart
 ```
+
+## Support contacts
+
+In case you encounter problems with installation or upgrade of ODN, please use mailing list odn-support@googlegroups.com . This mailing list is public and is preferred way of getting support.
+
+If you need to post a message containng some more sensitive information, you can mail the ODN team using address support@opendatanode.org .
