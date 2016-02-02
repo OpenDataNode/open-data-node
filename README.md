@@ -33,7 +33,7 @@ at: https://utopia.sk/wiki/display/ODN/Architecture+and+Design
 
 ### Releases
 
-For details about releases of OpenDataNode, see [OpenDataNode Releases](https://github.com/OpenDataNode/open-data-node/releases).
+For details about releases of Open Data Node, see [Open Data Node Releases](https://github.com/OpenDataNode/open-data-node/releases).
 
 ### Installation
 
