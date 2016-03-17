@@ -7,6 +7,7 @@ Install and Upgrade Manual
 - [Installation on clean system](#installation-on-clean-system)
 	- [Post-installation steps](#post-installation-steps)
 - [Upgrade from a previous version](#upgrade-from-a-previous-version)
+- [Upgrade from debian 7 to 8](#upgrade-from-debian-7-to-8)
 - [Installation of optional components](#installation-of-optional-components)
 	- [UnifiedViews QualityAssesment Plugins](#unifiedviews-qualityassesment-plugins)
 	- [LDVMI (Payola)](#ldvmi-payola)
@@ -107,10 +108,37 @@ If you already installed ODN using steps described in previous section, follow t
 1. it is strongly recommended to backup databases
 2. to update to newest version, simply run:
 ```
-aptitude update
-aptitude upgrade
+apt-get update
+apt-get upgrade
 ```
 User is required to confirm replacement of configuration files from previous installation, it should be confirmed by pressing **'Y'** each time user input is required.
+
+## Upgrade from debian 7 to 8 
+When you finish a [upgrading](https://www.debian.org/releases/stable/i386/release-notes/ch-upgrading.en.html) process you shall upgrade odn as well. Use a repository for debian 8.
+
+```
+echo "deb http://packages.comsode.eu/debian/ jessie main" > /etc/apt/sources.list.d/odn.list
+apt-get update
+apt-get upgrade
+```
+
+
+*__Note__: :exclamation:  If you dealing with the problems mentioned down you can fix it by
+
+`apt-get install --reinstall odn-simple`
+
+* Internal catalog or public catalog is unavailable.  `https://<hostname>/` or `https://<hostname>/internalcatalog`
+and you see an message ```ImportError: No module named _sysconfigdata_nd in /var/log/apache2/odn-ckan-ic.error```  
+it's a known issue in Debian 8 - read more here https://bugs.launchpad.net/ubuntu/+source/python2.7/+bug/1115466
+
+
+* If all services are unavailable `https://<hostname>/midpoint/` `https://<hostname>/` or `https://<hostname>/internalcatalog` `https://<hostname>/unifiedviews`
+It's because apache2. it's a known issue in Debian 8 - read more here  https://www.debian.org/releases/stable/amd64/release-notes/ch-information.en.html#apache-httpd-incomat
+
+* Internal catalog or public catalog is unavailable. `https://<hostname>/` or `https://<hostname>/internalcatalog`
+and you see an message `**AttributeError: 'module' object has no attribute 'PROTOCOL_SSLv3'** `in `/var/log/apache2/odn-ckan-ic.error ` 
+it's known issue in Debian 8 - read more here - http://stackoverflow.com/questions/28987891/patch-pyopenssl-for-sslv3-issue 
+
 
 ## Installation of optional components
 
