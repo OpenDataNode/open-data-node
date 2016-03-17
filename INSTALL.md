@@ -33,8 +33,8 @@ tomcat 7 uses by default java 6 so it is necessary to change default java for to
 To install packages from COMSODE Debian repository, please follow these steps:
  
 1. Add ODN packages repository into apt-sources-list: <br>
-`echo "deb http://packages.comsode.eu/debian/ wheezy main" > /etc/apt/sources.list.d/odn.list`
-
+ * for debian 7 wheezy<br>`echo "deb http://packages.comsode.eu/debian/ wheezy main" > /etc/apt/sources.list.d/odn.list`
+ * for debian 8 jessie <br>`echo "deb http://packages.comsode.eu/debian/ jessie main" > /etc/apt/sources.list.d/odn.list`
 2. Add ODN public key: <br>
 `wget -O - http://packages.comsode.eu/key/odn.gpg.key | apt-key add -`
 
