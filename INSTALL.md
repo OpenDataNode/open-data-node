@@ -15,7 +15,7 @@ Install and Upgrade Manual
 
 ## Configuration of system
 
-Supported distribution is Debian Wheezy (7.x).
+Supported distribution is Debian Wheezy (7.x) and Debian Jessie (8.x).
 
 ### Configure FQDN on Debian
 
