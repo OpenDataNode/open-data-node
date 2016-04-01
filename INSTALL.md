@@ -7,7 +7,7 @@ Install and Upgrade Manual
 - [Installation on clean system](#installation-on-clean-system)
 	- [Post-installation steps](#post-installation-steps)
 - [Upgrade from a previous version](#upgrade-from-a-previous-version)
-- [Upgrade from debian 7 to 8](#upgrade-from-debian-7-to-8)
+	- [Upgrade from Debian 7 to 8](#upgrade-from-debian-7-to-8)
 - [Installation of optional components](#installation-of-optional-components)
 	- [UnifiedViews QualityAssesment Plugins](#unifiedviews-qualityassesment-plugins)
 	- [LDVMI (Payola)](#ldvmi-payola)
@@ -113,8 +113,8 @@ apt-get upgrade
 ```
 User is required to confirm replacement of configuration files from previous installation, it should be confirmed by pressing **'Y'** each time user input is required.
 
-## Upgrade from debian 7 to 8 
-When you finish a [upgrading](https://www.debian.org/releases/stable/i386/release-notes/ch-upgrading.en.html) process you shall upgrade odn as well. Use a repository for debian 8.
+### Upgrade from Debian 7 to 8
+When you finish a [Debian upgrading](https://www.debian.org/releases/stable/i386/release-notes/ch-upgrading.en.html) process you shall upgrade odn as well. Use a repository for debian 8.
 
 ```
 echo "deb http://packages.comsode.eu/debian/ jessie main" > /etc/apt/sources.list.d/odn.list
