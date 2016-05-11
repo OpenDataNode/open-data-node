@@ -21,7 +21,7 @@ Supported distribution is Debian Wheezy (7.x) and Debian Jessie (8.x).
 
 Before installing ODN, make sure that value returned by `hostname -f` is the one under which you would like your ODN instance to be accessible.
 Example: If `hostname -f` returns "odn.myorganization.org", your ODN instance will be available at http://odn.myorganization.org/ .
-Note: If the hostname is notproper FQDN, some users may experience problems while accessing your ODN instance.
+Note: If the hostname is not proper FQDN, some users may experience problems while accessing your ODN instance.
 If you are not sure how to configure FQDN on Debian system, please follow instructions at https://wiki.debian.org/HowTo/ChangeHostname .
 
 ### Configuration of java for tomcat
@@ -77,10 +77,10 @@ Log in into private part of ODN and get into user management module:
 
 Set new password for `admnistrator`:
 
-* Select `List > Users`
+* Select `Users > List Users`
 * Select `administrator`
-* Select `User details settings > Show empty fields` (`User details settings` is the "gear whell" icon right to the "User details")
-* At the bottom, fill in new password (twice) and submit (`Save`)
+* Click `Password > Change` button (bottom of `Details`)
+* Two password fields appear, fill in new password (twice) and submit (`Save`)
 
 And set new password also for `casadmin` by repeating last 4 steps, this time for user "casadmin".
 
@@ -96,7 +96,7 @@ Log in into public part of ODN:
 
 * Open browser and use link `https://<hostname>/user/login` (where `<hostname>` is name/FQDN of your ODN server)
 * Log in with user name `admin` and password `admin`
-* Select `Edit settings` ("gear wheel" icon left to "logout" icon in top-right cornenr)
+* Select `Edit settings` ("gear wheel" icon left to "logout" icon in top-right corner)
 * At the bottom, fill in new password (twice) and submit (`Update Profile`)
 
 ## Upgrade from a previous version
