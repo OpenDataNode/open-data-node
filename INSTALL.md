@@ -142,7 +142,7 @@ it's known issue in Debian 8 - read more here - http://stackoverflow.com/questio
 
 ## Installation of optional components
 
-Open Data Node supports also aditional components that could be installed and integrated with other core Open Data Node components
+Open Data Node supports also additional components that could be installed and integrated with other core Open Data Node components
 
 ### UnifiedViews QualityAssesment Plugins
 
