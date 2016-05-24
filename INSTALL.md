@@ -7,7 +7,7 @@ Install and Upgrade Manual
 - [Installation on clean system](#installation-on-clean-system)
 	- [Post-installation steps](#post-installation-steps)
 - [Upgrade from a previous version](#upgrade-from-a-previous-version)
-- [Upgrade from debian 7 to 8](#upgrade-from-debian-7-to-8)
+	- [Upgrade from Debian 7 to 8](#upgrade-from-debian-7-to-8)
 - [Installation of optional components](#installation-of-optional-components)
 	- [UnifiedViews QualityAssesment Plugins](#unifiedviews-qualityassesment-plugins)
 	- [LDVMI (Payola)](#ldvmi-payola)
@@ -15,13 +15,13 @@ Install and Upgrade Manual
 
 ## Configuration of system
 
-Supported distribution is Debian Wheezy (7.x).
+Supported distribution is Debian Wheezy (7.x) and Debian Jessie (8.x).
 
 ### Configure FQDN on Debian
 
 Before installing ODN, make sure that value returned by `hostname -f` is the one under which you would like your ODN instance to be accessible.
 Example: If `hostname -f` returns "odn.myorganization.org", your ODN instance will be available at http://odn.myorganization.org/ .
-Note: If the hostname is notproper FQDN, some users may experience problems while accessing your ODN instance.
+Note: If the hostname is not proper FQDN, some users may experience problems while accessing your ODN instance.
 If you are not sure how to configure FQDN on Debian system, please follow instructions at https://wiki.debian.org/HowTo/ChangeHostname .
 
 ### Configuration of java for tomcat
@@ -77,10 +77,10 @@ Log in into private part of ODN and get into user management module:
 
 Set new password for `admnistrator`:
 
-* Select `List > Users`
+* Select `Users > List Users`
 * Select `administrator`
-* Select `User details settings > Show empty fields` (`User details settings` is the "gear whell" icon right to the "User details")
-* At the bottom, fill in new password (twice) and submit (`Save`)
+* Click `Password > Change` button (bottom of `Details`)
+* Two password fields appear, fill in new password (twice) and submit (`Save`)
 
 And set new password also for `casadmin` by repeating last 4 steps, this time for user "casadmin".
 
@@ -96,7 +96,7 @@ Log in into public part of ODN:
 
 * Open browser and use link `https://<hostname>/user/login` (where `<hostname>` is name/FQDN of your ODN server)
 * Log in with user name `admin` and password `admin`
-* Select `Edit settings` ("gear wheel" icon left to "logout" icon in top-right cornenr)
+* Select `Edit settings` ("gear wheel" icon left to "logout" icon in top-right corner)
 * At the bottom, fill in new password (twice) and submit (`Update Profile`)
 
 ## Upgrade from a previous version
@@ -113,8 +113,8 @@ apt-get upgrade
 ```
 User is required to confirm replacement of configuration files from previous installation, it should be confirmed by pressing **'Y'** each time user input is required.
 
-## Upgrade from debian 7 to 8 
-When you finish a [upgrading](https://www.debian.org/releases/stable/i386/release-notes/ch-upgrading.en.html) process you shall upgrade odn as well. Use a repository for debian 8.
+### Upgrade from Debian 7 to 8
+When you finish a [Debian upgrading](https://www.debian.org/releases/stable/i386/release-notes/ch-upgrading.en.html) process you shall upgrade odn as well. Use a repository for debian 8.
 
 ```
 echo "deb http://packages.comsode.eu/debian/ jessie main" > /etc/apt/sources.list.d/odn.list
@@ -142,7 +142,7 @@ it's known issue in Debian 8 - read more here - http://stackoverflow.com/questio
 
 ## Installation of optional components
 
-Open Data Node supports also aditional components that could be installed and integrated with other core Open Data Node components
+Open Data Node supports also additional components that could be installed and integrated with other core Open Data Node components
 
 ### UnifiedViews QualityAssesment Plugins
 
